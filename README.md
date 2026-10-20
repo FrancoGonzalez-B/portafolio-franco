@@ -29,4 +29,5 @@ Durante el desarrollo consulté preguntas técnicas como estas:
 - ¿Cómo puedo simplificar el CSS, mantener el diseño adaptable y cambiar los colores desde un solo lugar?
 - ¿Cómo puedo quitar elementos que no necesito, como un logo o botones de navegación, sin perder la estructura principal?
 - ¿Cómo explico las decisiones de diseño, la accesibilidad y los puntos de adaptación del sitio según la rúbrica de la presentación oral?
-- ¿Como le hago para que mi pagina se adpte a todos los dispositivos celular, tablet y compu?
+- ¿Cómo le hago para que mi pagina se adpte a todos los dispositivos celular, tablet y compu?
+- Rellena la informacion faltante ya puse mi nombre y un titulo, faltan las tarjetas. 
