@@ -1,0 +1,94 @@
+/* Cambia los colores en este bloque */
+:root {
+  --fondo: #f7f5ef;
+  --panel: #eeeae0;
+  --texto: #19352f;
+  --texto-suave: #4a5c55;
+  --acento: #c95436;
+  --oscuro: #142c27;
+  --blanco: #fffefa;
+  --texto-claro: #d5dfd9;
+  --borde: #d8d8cd;
+  --borde-claro: #ffffff55;
+  --boton: #e5a18a;
+  --estado: #78956e;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 Arial, sans-serif; }
+a { color: inherit; }
+button, input, textarea { font: inherit; }
+:focus-visible { outline: 3px solid var(--acento); outline-offset: 3px; }
+.page-shell { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
+.section-pad { padding: 3.5rem 0; }
+
+.skip-link { position: fixed; top: -5rem; left: 1rem; padding: .7rem; background: var(--texto); color: var(--blanco); }
+.skip-link:focus { top: 1rem; }
+
+/* Encabezado */
+.header-inner, .footer-inner, .footer-bottom { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--borde); }
+.wordmark { color: var(--texto); font-weight: 700; text-decoration: none; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+.site-nav a, .back-top { color: var(--texto-suave); text-decoration: none; }
+
+/* Presentación */
+.hero { display: grid; align-items: center; gap: 2rem; padding: 3rem 0; }
+.eyebrow { color: var(--acento); font-size: .75rem; font-weight: 700; }
+.hero .eyebrow { color: var(--texto-suave); }
+.status-dot { display: inline-block; width: .5rem; height: .5rem; margin-right: .4rem; border-radius: 50%; background: var(--estado); }
+h1, h2, h3, p { margin-top: 0; }
+h1 { font: 400 clamp(2.8rem, 9vw, 5rem)/1.05 Georgia, serif; }
+h1 span, .work em, .contact em { color: var(--acento); }
+.hero-intro { max-width: 440px; color: var(--texto-suave); }
+.hero-note { color: var(--texto-suave); font-size: .85rem; }
+.hero-art { display: grid; place-items: center; }
+.profile-photo { width: min(100%, 320px); aspect-ratio: 1; border: 5px solid var(--blanco); border-radius: 50%; object-fit: cover; }
+
+/* Proyectos */
+.work-heading { margin-bottom: 1.5rem; }
+.work-aside { max-width: 320px; color: var(--texto-suave); }
+.project-grid { display: grid; gap: 1rem; }
+.project-card { padding: 1.2rem; border: 1px solid var(--borde); background: var(--blanco); }
+.project-type { color: var(--acento); font-size: .7rem; font-weight: 700; }
+.project-card h3 { font: 1.4rem Georgia, serif; }
+.project-card p:last-child { margin-bottom: 0; color: var(--texto-suave); }
+.content-note { margin-top: 1rem; color: var(--texto-suave); font-size: .85rem; }
+
+/* Contacto */
+.contact { background: var(--oscuro); color: var(--blanco); }
+.contact .eyebrow, .contact em { color: var(--boton); }
+.contact-copy > p:not(.eyebrow) { color: var(--texto-claro); }
+.email-link { color: var(--blanco); overflow-wrap: anywhere; }
+.contact-form { padding: 1rem; border: 1px solid var(--borde-claro); }
+.form-field { display: grid; gap: .3rem; margin-bottom: .8rem; }
+.form-field input, .form-field textarea { width: 100%; padding: .65rem; border: 1px solid var(--borde); background: var(--fondo); color: var(--texto); }
+.button-light { padding: .7rem 1rem; border: 0; background: var(--boton); color: var(--texto); cursor: pointer; }
+.form-note { margin: .7rem 0 0; color: var(--texto-claro); font-size: .8rem; }
+
+/* Pie de página */
+.site-footer { background: var(--oscuro); color: var(--blanco); }
+.footer-inner, .footer-bottom { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; }
+.footer-inner p { margin: 0; color: var(--texto-claro); }
+.back-top { color: var(--blanco); }
+.footer-bottom { border-top: 1px solid var(--borde-claro); color: var(--texto-claro); font-size: .75rem; }
+
+/* Tablet 600 px, escritorio 900 px y pantallas amplias 1200 px */
+@media (min-width: 600px) {
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
+  .work-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; }
+}
+
+@media (min-width: 900px) {
+  .hero, .contact-grid { grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .hero { min-height: 600px; }
+  .project-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .section-pad { padding: 5rem 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

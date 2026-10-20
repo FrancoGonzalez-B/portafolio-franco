@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="Portafolio personal de estudiante de Ingeniería Civil en Informática. Proyectos, aprendizajes y contacto.">
+    <title>Portafolio | Franco González</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#sobre-mi">Franco González</a>
+
+        <nav class="site-nav" aria-label="Navegación principal">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#trabajos">Proyectos</a>
+          <a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="hero page-shell" id="sobre-mi" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Estudiante de informática · Temuco, Chile</p>
+          <h1 id="hero-title">Ideas claras,<br><span>experiencias</span><br>que conectan.</h1>
+          <p class="hero-intro">Hola, soy <strong>Franco González</strong>, estudiante de Ingeniería Civil en Informática en la Universidad Católica de Temuco. Me interesa crear interfaces web claras y fáciles de usar.</p>
+          <p class="hero-note">En formación · Ingeniería Civil en Informática</p>
+        </div>
+
+        <div class="hero-art">
+          <img class="profile-photo" src="img/ftoportafolio.jpeg" alt="Foto de presentación de Franco González">
+        </div>
+      </section>
+
+      <section class="work section-pad" id="trabajos" aria-labelledby="work-title">
+        <div class="page-shell">
+          <div class="work-heading">
+            <div class="section-heading">
+              <p class="eyebrow">02 / SELECCIÓN DE TRABAJOS</p>
+              <h2 id="work-title">Práctica que se<br><em>vuelve experiencia.</em></h2>
+            </div>
+            <p class="work-aside">Una muestra de lo que estoy explorando en el bloque de desarrollo frontend.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card">
+              <p class="project-type">PROYECTO PERSONAL · 2026</p>
+              <h3>Mi primer portafolio</h3>
+              <p>Una página para presentar quién soy, lo que aprendo y cómo pienso.</p>
+            </article>
+
+            <article class="project-card">
+              <p class="project-type">PRÁCTICA · HTML5</p>
+              <h3>Estructura con sentido</h3>
+              <p>Contenido organizado con etiquetas semánticas y una jerarquía fácil de recorrer.</p>
+            </article>
+
+            <article class="project-card">
+              <p class="project-type">EJERCICIO · CSS</p>
+              <h3>Una interfaz, cada pantalla</h3>
+              <p>Diseño adaptable que conserva la lectura en móvil, tablet y escritorio.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-pad" id="contacto" aria-labelledby="contact-title">
+        <div class="page-shell contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">03 / CONTACTO</p>
+            <h2 id="contact-title">¿Creamos algo<br><em>con intención?</em></h2>
+            <p>Estoy empezando mi camino en tecnología y siempre tengo ganas de conversar, colaborar y aprender.</p>
+            <a class="email-link" href="mailto:franco.gonzalez2026@alu.uct.cl">franco.gonzalez2026@alu.uct.cl <span aria-hidden="true">↗</span></a>
+          </div>
+          <form class="contact-form" action="mailto:franco.gonzalez2026@alu.uct.cl" method="post" enctype="text/plain">
+            <p class="form-intro">Déjame un mensaje</p>
+            <div class="form-field"><label for="nombre">Tu nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" placeholder="¿Cómo te llamas?" required></div>
+            <div class="form-field"><label for="correo">Tu correo</label><input id="correo" name="correo" type="email" autocomplete="email" placeholder="nombre@correo.com" required></div>
+            <div class="form-field"><label for="mensaje">Tu mensaje</label><textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntame en qué estás pensando..." required></textarea></div>
+            <button class="button button-light" type="submit">Enviar mensaje <span aria-hidden="true">↗</span></button>
+            <p class="form-note">El formulario abrirá tu aplicación de correo.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-shell footer-inner">
+        <a class="wordmark" href="#sobre-mi">Franco González</a>
+        <p>Hecho con curiosidad en Temuco, Chile.</p>
+        <a class="back-top" href="#sobre-mi">Volver arriba</a>
+      </div>
+      <div class="page-shell footer-bottom"><span>© 2026 Franco González</span><span>Diseñado para personas, hecho para la web.</span></div>
+    </footer>
+  </body>
+</html>
